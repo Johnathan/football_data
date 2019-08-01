@@ -1,0 +1,56 @@
+{
+    "name": "johnathan/football_data",
+    "description": "Simple wrapper around football-data.org API endpoints",
+    "keywords": [
+        "johnathan",
+        "football_data"
+    ],
+    "homepage": "https://github.com/johnathan/football_data",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Johnathan Barrett",
+            "email": "johnathan.barrett@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "~6.0",
+        "illuminate/support": "5.8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Johnathan\\FootballData\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Johnathan\\FootballData\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Johnathan\\FootballData\\FootballDataServiceProvider"
+            ],
+            "aliases": {
+                "FootballData": "Johnathan\\FootballData\\FootballDataFacade"
+            }
+        }
+    }
+}
