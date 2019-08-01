@@ -5,8 +5,8 @@ namespace Johnathan\FootballData;
 use GuzzleHttp\Client;
 use Psr\Http\Message\ResponseInterface;
 
-class FootballData {
-
+class FootballData
+{
     protected $client;
 
     /**
@@ -19,7 +19,7 @@ class FootballData {
             'base_uri' => 'http://api.football-data.org/v2/',
             'headers' => [
                 'X-Auth-Token' => $authToken,
-            ]
+            ],
         ]);
     }
 
