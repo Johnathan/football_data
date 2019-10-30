@@ -1,4 +1,6 @@
-# Very short description of the package
+# Football Data
+
+Simle PHP library for interacting with [football-data](https://www.football-data.org/) api.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/johnathan/football_data.svg?style=flat-square)](https://packagist.org/packages/johnathan/football_data)
 [![Build Status](https://img.shields.io/travis/johnathan/football_data/master.svg?style=flat-square)](https://travis-ci.org/johnathan/football_data)
